@@ -7,9 +7,20 @@ require_once 'Truck.php';
 require_once 'MotorWay.php';
 require_once 'PedestrianWay.php';
 require_once 'ResidentialWay.php';
+require_once 'Speedometer.php';
 
 
 
+$result = Speedometer::convertKmToMiles(10);
+var_dump($result);
+$result1 = Speedometer::convertMilesToKm(70);
+var_dump($result1);
+
+
+
+
+
+/*
 $car1 = new Car('black', '5', 'fuel');
 var_dump($car1);
 $car1->switchOn();
@@ -24,7 +35,7 @@ $bicycle1->switchOn();
 var_dump($bicycle1);
 $bicycle1->switchOff();
 var_dump($bicycle1);
-
+*/
 
 
 
